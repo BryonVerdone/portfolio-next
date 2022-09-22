@@ -5,13 +5,14 @@ import headshot from '../public/portfolio-img.JPG';
 export default function Home() {
   return (
     <div className='hero min-h-screen bg-base-200'>
-      <div className='hero-content flex-col lg:flex-row'>
+      <div className='hero-content flex-col lg:flex-row  '>
         <Image
           className='rounded-full'
           width={'300'}
           height={'300'}
           src={headshot}
         />
+
         <div>
           <h1 className='text-5xl font-bold'>Bryon Verdone</h1>
           <p className='py-6'>

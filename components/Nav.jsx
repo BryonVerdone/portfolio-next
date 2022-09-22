@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const Nav = () => {
   return (
     <div className='navbar bg-base-100'>
@@ -60,18 +60,32 @@ const Nav = () => {
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal p-0'>
           <li>
-            <a>About</a>
-          </li>
-          <li tabIndex={0}>
-            <a>Projects</a>
+            <Link href='/'>
+              <button>Home</button>
+            </Link>
           </li>
           <li>
-            <a>Blog</a>
+            <Link href='/about'>
+              <button>About</button>
+            </Link>
+          </li>
+          <li>
+            <Link href='/projects'>
+              <button>Projects</button>
+            </Link>
+          </li>
+
+          <li>
+            <Link href='/blog'>
+              <button>Blog</button>
+            </Link>
           </li>
         </ul>
       </div>
       <div className='navbar-end'>
-        <a className='btn'>Contact</a>
+        <Link href='/contact'>
+          <a className='btn'>Contact</a>
+        </Link>
       </div>
     </div>
   );
