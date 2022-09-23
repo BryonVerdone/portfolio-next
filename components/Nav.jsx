@@ -3,7 +3,6 @@ import React from 'react';
 import Link from 'next/link';
 
 const Nav = () => {
-  const mobileNav = document.getElementById('mobile-nav');
   return (
     <div className='navbar bg-base-100'>
       <div className='navbar-start'>
@@ -30,7 +29,7 @@ const Nav = () => {
             className=' menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100  rounded-box w-52 '
           >
             <li>
-              <Link onClick={mobileNav.blur()} href='/'>
+              <Link href='/'>
                 <button>Home</button>
               </Link>
             </li>
