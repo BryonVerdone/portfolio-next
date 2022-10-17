@@ -5,7 +5,7 @@ import navStyles from '../styles/Nav.module.css';
 const Nav = () => {
   function toggleNav() {
     const mobileNav = document.getElementById('mobile-nav');
-    mobileNav.classList.toggle(navStyles.hidden);
+    mobileNav.classList.toggle(navStyles.show);
   }
   return (
     <div id='navbar' className='navbar bg-base-100 '>
