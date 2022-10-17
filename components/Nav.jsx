@@ -1,14 +1,19 @@
 import React from 'react';
 
 import Link from 'next/link';
-
+import navStyles from '../styles/Nav.module.css';
 const Nav = () => {
+  function toggleNav() {
+    const mobileNav = document.getElementById('mobile-nav');
+    mobileNav.classList.toggle(navStyles.hidden);
+  }
   return (
-    <div className='navbar bg-base-100'>
+    <div id='navbar' className='navbar bg-base-100 '>
       <div className='navbar-start'>
         <div className='dropdown'>
           <label tabIndex={0} className='btn btn-ghost lg:hidden'>
             <svg
+              onClick={toggleNav}
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5'
               fill='none'
@@ -30,23 +35,23 @@ const Nav = () => {
           >
             <li>
               <Link href='/'>
-                <button>Home</button>
+                <button onClick={toggleNav}>Home</button>
               </Link>
             </li>
             <li>
               <Link href='/about'>
-                <button>About</button>
+                <button onClick={toggleNav}>About</button>
               </Link>
             </li>
             <li>
               <Link href='/projects'>
-                <button>Projects</button>
+                <button onClick={toggleNav}>Projects</button>
               </Link>
             </li>
 
             <li>
               <Link href='/blog'>
-                <button>Blog</button>
+                <button onClick={toggleNav}>Blog</button>
               </Link>
             </li>
           </ul>
