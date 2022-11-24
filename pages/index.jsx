@@ -7,9 +7,10 @@ export default function Home() {
     <div className='hero min-h-screen bg-base-200'>
       <div className='hero-content flex-col lg:flex-row  '>
         <Image
+          priority
           className='rounded-full'
-          width={'300'}
-          height={'300'}
+          width={'200'}
+          height={'200'}
           src={headshot}
         />
 
