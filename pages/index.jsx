@@ -22,15 +22,22 @@ export default function Home() {
           <div>
             <ul className='flex gap-3 '>
               <li>
-                <a href='https://github.com/BryonVerdone'>GitHub</a>
+                <a target='_blank' href='https://github.com/BryonVerdone'>
+                  GitHub
+                </a>
               </li>
               <li>
-                <a href='https://www.linkedin.com/in/bryon-verdone/'>
+                <a
+                  target='_blank'
+                  href='https://www.linkedin.com/in/bryon-verdone/'
+                >
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a href='https://twitter.com/_thebryguy'>Twitter</a>
+                <a target='_blank' href='https://twitter.com/_thebryguy'>
+                  Twitter
+                </a>
               </li>
             </ul>
           </div>
